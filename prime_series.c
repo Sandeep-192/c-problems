@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     int n;
-    printf("Enter n for  #n number:");
+    printf("Enter n for  #n numbers:");
     scanf("%d",&n);
     int num = 2;
     int count =0;
