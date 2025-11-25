@@ -5,7 +5,7 @@ int main() {
     scanf("%d",&num);
     int originalNum = num;
     int reverseNum = 0;
-    while(num>0) {
+    while(num!=0) {
         int digit =num %10;
         reverseNum = (reverseNum * 10) + digit;
         num /= 10;
