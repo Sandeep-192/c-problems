@@ -1,13 +1,12 @@
 #include <stdio.h>
 int main() {
     int n;
-    printf("Enter n for #n numbers of fibonacci series: ");
+    printf("Enter n for fibonacci series:");
     scanf("%d",&n);
-    int firstNum = 0,secondNum =1;
-    printf("%d %d ",firstNum,secondNum);
-    for(int i=2;i<n;i++) {
+    int firstNum = 0, secondNum = 1;
+    for(int i=0;i<n;i++) {
         int nextNum = firstNum + secondNum;
-        printf("%d ",nextNum);
+        printf("%d ",firstNum);
         firstNum = secondNum;
         secondNum = nextNum;
     }
