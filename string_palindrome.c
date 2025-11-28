@@ -3,7 +3,8 @@
 int main () {
     char originalString[20];
     printf("Enter string:");
-    scanf("%[^\n]",originalString);
+    fgets(string, sizeof(string), stdin);
+    string[strcspn(string, "\n")] = '\0';
     char string[20];
     strcpy(string, originalString);
     int start = 0;
