@@ -2,7 +2,8 @@
 int main () {
     char string[20];
     printf("Enter string:");
-    scanf("%[^\n]",string);
+    fgets(string, sizeof(string), stdin);
+    string[strcspn(string, "\n") = '\0';
     int vowelCount = 0, consonantCount = 0;
     for(int i=0;string[i] != '\0';i++) {
         if((string[i] >= 'a' && string[i] <= 'z') || (string[i] >= 'A' && string[i] <= 'Z')){
