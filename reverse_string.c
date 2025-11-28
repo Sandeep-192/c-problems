@@ -4,7 +4,7 @@ int main () {
     char string[20];
     printf("Enter string:");
     fgets(string, sizeof(string), stdin);
-    string(strcspn(string, "\n") = '\0';
+    string[(strcspn(string, "\n")] = '\0';
     int start = 0;
     int end = strlen(string) - 1;
     while(start < end) {
