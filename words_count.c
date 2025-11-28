@@ -3,7 +3,8 @@
 int main () {
     char string[200];
     printf("Enter string:");
-    scanf("%[^\n]",string);
+    fgets(string, sizeof(string), stdin);
+    string[strcspn(string, "\n")] = '\0';
     int wordCount = 0;
     int inWord = 0;  //flag to check  if we are inside a word
     for(int i=0;string[i]!='\0';i++) {
